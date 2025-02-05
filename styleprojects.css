@@ -1,0 +1,628 @@
+/* projects */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", serif;
+     font-weight: 400;
+     font-style: normal;
+    }
+
+
+
+ html {
+     scroll-behavior: smooth;
+     }  
+
+
+
+ .container {
+     width: 100%;
+     height: 140vh;
+     background-color: rgb(255, 255, 255);
+     }
+
+
+.container  nav {
+     background-color:#ffffff;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 17vh;
+     width: 100%;
+     top: 0;
+     gap: 25px;
+   
+        /* animation */
+   
+     visibility: hidden;
+     opacity: 0; 
+     animation: show-content 1.5s linear forwards;
+     animation-delay: .8s;
+     }
+   
+    @keyframes show-content {
+         100% {
+             visibility: visible;
+             opacity: 1;
+         }
+     }
+
+
+  /* logo */
+
+  .container nav #logo {
+
+      box-sizing: border-box;
+      font-family: "Poppins", serif;
+      font-weight: 500;
+      font-style: normal;
+       }
+
+
+#logo:hover {
+      cursor: default;
+    }
+
+/* UL  */
+
+.container nav ul {
+      display: flex;
+      gap: 2rem;
+      font-size: 1.5rem;
+      list-style: none;
+      margin-left: 2.7rem ;
+     }
+
+
+
+.container nav ul li a {
+      padding: 20px; ;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: capitalize;
+      text-decoration: none;
+      color: black;
+     }
+ 
+.container nav ul li a:hover {
+      transition-duration: 0.2s;
+      color: gray ;
+      text-decoration: underline;
+      text-underline-offset: 0.5rem;
+      text-decoration-color: rgb(181, 181, 181);
+   
+    }
+
+
+
+    #button3 {
+        text-decoration: none;
+        background-color: #EA7600;
+        color: black;
+        border: #EA7600 solid;
+        border-radius: 25px;
+        margin-left: 10px;
+        font-size: 1.3rem;
+        padding: 6px;
+        font-weight: 500;
+   
+        transition-duration: 0.2s;
+   
+        }
+
+
+     #button3:hover {
+         background-color: rgb(234, 151, 9);
+         color: black;
+         border:  rgb(234, 151, 9) solid;
+         border-radius: 25px;
+         font-size: 1.3rem;
+         padding: 4px;
+         font-weight: 500;
+         box-shadow: 0 0 10px rgb(234, 151, 9);
+         } 
+
+
+ /* myprojects */
+
+ .myprojects {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+ } 
+
+  
+ #myprojh1 {
+     margin-top: 4rem;
+     font-size: 3rem;
+     font-weight: 500;
+     cursor: default;     
+ }
+
+
+ .classproj {
+
+     display: flex;
+     flex-direction: column;
+
+ }
+
+
+ .row1 {
+     gap: 4rem;
+     display: flex;
+     margin-bottom: 4rem;
+ }
+
+
+
+ /* project1 */
+
+ .project1 {
+     border: black 4px solid;
+     border-radius: 8px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     margin-top: 10rem;
+     background-color: #ffffff;
+
+ }
+
+ .project1 a {
+     width: 420px;
+     height: 230px;
+     text-decoration: none;
+     overflow: hidden;
+     
+ }
+
+ .project1 img {
+     width: 100%;
+     text-decoration: none;
+
+
+ }
+
+ #applepro {
+    margin-top: .3rem;
+     gap: 3rem;
+     color: #000000;
+     font-weight: 400;
+ }
+
+
+
+.project1 img , .project2 img , .project3 img , .project4 img , .project5 img , .project6 img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+ /* .project1 img .proj1 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  } */
+  
+  .project1:hover img , .project2:hover img , .project3:hover img , .project4:hover img , .project5:hover img , .project6:hover img{
+    opacity: 0.3;
+  }
+  
+  /* .project1:hover .proj1 {
+    opacity: 1;
+  }
+  
+ .project1 img .proj1 .text1 {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  } */
+
+
+
+
+/* project 2 */
+
+
+.project2 {
+    border: black 4px solid;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    background-color: #ffffff;
+
+}
+
+.project2 a {
+    width: 420px;
+    height: 230px;
+    text-decoration: none;
+    overflow: hidden;
+    
+}
+
+.project2 img {
+    width: 100%;
+    text-decoration: none;
+
+
+}
+
+#threetroph {
+   margin-top: .3rem;
+    gap: 3rem;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+
+
+/* project 3 */
+
+
+.project3 {
+    border: black 4px solid;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    background-color: #ffffff;
+
+}
+
+.project3 a {
+    width: 420px;
+    height: 230px;
+    text-decoration: none;
+    overflow: hidden;
+    
+}
+
+.project3 img {
+    width: 100%;
+    text-decoration: none;
+
+
+}
+
+#sportrooms {
+   margin-top: .3rem;
+    gap: 3rem;
+    color: #000000;
+    font-weight: 400;
+ }
+
+
+
+ /* row 2 */
+
+.row2 {
+
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+
+/* project 4 */
+
+
+.project4 {
+    border: black 4px solid;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-color: #ffffff;
+
+}
+
+.project4 a {
+    width: 420px;
+    height: 229.1px;
+    text-decoration: none;
+    overflow: hidden;
+    
+}
+
+.project4 img {
+    width: 100%;
+    text-decoration: none;
+
+
+}
+
+#stadium {
+   margin-top: .3rem;
+    gap: 3rem;
+    color: #000000;
+    font-weight: 400;
+ }
+
+
+ /* project 5 */
+
+ 
+.project5 {
+    border: black 4px solid;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-color: #ffffff;
+
+}
+
+.project5 a {
+    width: 420px;
+    height: 230px;
+    text-decoration: none;
+    overflow: hidden;
+    
+}
+
+.project5 img {
+    width: 100%;
+    text-decoration: none;
+
+
+}
+
+#gamingchair {
+   margin-top: .3rem;
+    gap: 3rem;
+    color: #000000;
+    font-weight: 400;
+ }
+
+
+ /* project 6 */
+
+
+
+ 
+.project6 {
+     border: black 4px solid;
+     border-radius: 8px;
+     display: flex;
+      align-items: center;
+     flex-direction: column;
+     margin-top: 2rem;
+     background-color: #ffffff;
+
+}
+
+.project6 a {
+    width: 420px;
+    height: 230px;
+     text-decoration: none;
+     overflow: hidden;
+    
+}
+
+.project6 img {
+     width: 100%;
+     text-decoration: none;
+
+
+}
+
+#modernroom {
+     margin-top: .3rem;
+     gap: 3rem;
+     color: #000000;
+     font-weight: 400;
+ }
+
+
+
+
+
+
+
+
+
+ /* My Videos */
+
+
+ .myvids {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-direction: column;
+
+ } 
+
+  
+ #myvidsh1 {
+     margin-top: 12rem;
+     font-size: 3rem;
+     font-weight: 500;
+     cursor: default; 
+     margin-left: 35rem;
+ }
+
+
+ .classvids {
+
+     display: flex;
+     flex-direction: column;
+
+ }
+
+
+ .row1vid , .row2vid {
+     gap: 4rem;
+     display: flex;
+     margin-bottom: 4rem;
+ }
+
+
+ /* video 1 */
+
+
+ .video1 , .video2 , .video3 , .video4 {
+     border: black 4px solid;
+     border-radius: 8px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     margin-top: 4rem;
+     background-color: #ffffff;
+     overflow: hidden;
+
+}
+
+.video1 a , .video2 a , .video3 a , .video4 a {
+     width: 650px;
+     height: 318px;
+     text-decoration: none;
+     overflow: hidden;
+    
+}
+
+.video1 video , .video2 video , .video3 video , .video4 video {
+     width: 100%;
+     text-decoration: none;
+
+
+ }
+
+ #marble , #marble2 , #airpods1 , #vfx2 {
+     margin-top: .3rem;
+     gap: 3rem;
+     color: #000000;
+     font-weight: 400;
+     cursor: default;
+ }
+
+
+
+
+ /* contact now  */
+
+
+ .contactnow {
+     margin-top: 8rem;
+     margin-bottom: 10rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ #want {
+     margin-bottom:2.5rem ;
+     font-size: 2.5rem;
+     font-weight: 400;
+     cursor: default;
+ }
+
+ #contactbutton {
+    text-decoration: none;
+    background-color: #EA7600;
+    color: black;
+    border: #EA7600 solid;
+    border-radius: 25px;
+    /* margin-left: 10px; */
+    font-size: 2.5rem;
+    padding: 6px;
+    font-weight: 500;
+
+    transition-duration: 0.2s;
+
+    }
+
+
+ #contactbutton:hover {
+     background-color: #df7000;
+     color: black;
+     border: #df7000 solid;
+     border-radius: 25px;
+     font-size: 2.7rem;
+     padding: 4px;
+     font-weight: 500;
+     box-shadow: 0 0 10px #df7000;
+     } 
+
+
+
+  /* Footer */
+
+
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} 
+
+
+
+
+footer .top ul {
+    display: flex;
+    /* margin-left: 20px; */
+    gap: 1rem;
+    list-style: none;
+   }
+
+.social a {
+    display: inline-flex;
+    padding: 8px;
+    color: rgb(96, 5, 171);
+    border: 2px solid rgb(96, 5, 171);
+    border-radius: 50%;
+    transition: .5s;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+
+
+}
+
+.social a:hover {
+   color: black;
+   background-color:  rgb(96, 5, 171);
+   box-shadow: 0 0 10px  rgb(96, 5, 171);
+   /* margin: 0 8px; */
+}
+
+
+.footerlogo {
+   width: 150px; ;
+   /* margin-left: 4rem; */
+ } 
+
+.footer .footerlogo img {
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+}
+
+footer .top h1 {
+   font-size: 1rem;
+   color: rgb(69, 68, 68);
+}
